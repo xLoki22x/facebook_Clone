@@ -139,10 +139,270 @@ class profile extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 10, 20, 20),
+              child: Container(
+                child: Column(
+                  children: [
+                    Container(
+                        child: Row(
+                      children: [
+                        Icon(Iconsax.home),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text('Live in New York'),
+                        )
+                      ],
+                    )),
+                    Container(
+                        child: Row(
+                      children: [
+                        Icon(Iconsax.location),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text('From New York'),
+                        )
+                      ],
+                    )),
+                    Container(
+                        child: Row(
+                      children: [
+                        Icon(Iconsax.more_circle),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text('See you About info'),
+                        )
+                      ],
+                    )),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                      child: Container(
+                        width: 375,
+                        decoration: BoxDecoration(
+                            color: Colors.blueAccent.shade200,
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Center(
+                            child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            'Edit Pubilc Details',
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                          ),
+                        )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+                      child: Container(
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  'Friends',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text('536 friends'),
+                              ],
+                            ),
+                            Spacer(),
+                            Text(
+                              'Find friends',
+                              style:
+                                  TextStyle(color: Colors.blue, fontSize: 15),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
-      ))
+      )),
+      SliverGrid(
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: 150, childAspectRatio: 0.8),
+          delegate: SliverChildListDelegate([
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    image: AssetImage('../../img/eminem.jpeg'),
+                    fit: BoxFit.cover,
+                    width: 50,
+                    height: 50,
+                  ),
+                ),
+              ),
+            ),
+          ])),
+      SliverToBoxAdapter(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                  child: Container(
+                    width: 375,
+                    decoration: BoxDecoration(
+                        color: Colors.blueAccent[200],
+                        borderRadius: BorderRadius.circular(5)),
+                    child: Center(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'All Friends',
+                        style: TextStyle(fontSize: 15, color: Colors.white),
+                      ),
+                    )),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Container(
+                          child: Text(
+                        'Post',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      )),
+                      Spacer(),
+                      Container(
+                          child: Text(
+                        'Filters',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueAccent),
+                      )),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(100),
+                              child: Image(
+                                image: AssetImage('../../img/eminem.jpeg'),
+                                fit: BoxFit.cover,
+                                width: 50,
+                                height: 50,
+                              ),
+                            ),
+                            Container(
+                              width: 250,
+                              child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                        hintText: "Enter your post",
+                                        fillColor: Colors.white70),
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        child: Icon(
+                          Iconsax.gallery,
+                          color: Colors.green,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      )
     ]));
   }
 }
