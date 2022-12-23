@@ -64,7 +64,6 @@ class profile extends StatelessWidget {
                     children: <Widget>[
                       new Container(
                         height: topWidgetHeight,
-                        color: Colors.yellow,
                         child: Image(
                           image: AssetImage('../../img/billie.jpeg'),
                           width: 375,
@@ -74,9 +73,7 @@ class profile extends StatelessWidget {
                       new Container(
                         height: 55,
                       ),
-                      new Container(
-                        color: Colors.red,
-                      )
+                      new Container()
                     ],
                   ),
                   new Positioned(
@@ -101,7 +98,9 @@ class profile extends StatelessWidget {
             Container(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
-                child: Text('Marcus L.', style: TextStyle(fontSize: 20)),
+                child: Text('Marcus Lagar',
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
             ),
             Row(

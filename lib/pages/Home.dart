@@ -9,6 +9,7 @@ import 'package:flutter_facebook/pages/dashbord.dart';
 import 'package:flutter_facebook/pages/friends.dart';
 import 'package:flutter_facebook/pages/notification.dart';
 import 'package:flutter_facebook/pages/proflie.dart';
+import 'package:flutter_facebook/pages/setting.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -79,6 +80,6 @@ class Screenprofile extends StatelessWidget {
 class Screensetting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Setting '));
+    return setting();
   }
 }
