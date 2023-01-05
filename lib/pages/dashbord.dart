@@ -4,6 +4,8 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_facebook/model/podcat.dart';
 import 'package:iconsax/iconsax.dart';
 
+int count = 0;
+
 class dashbord extends StatelessWidget {
   const dashbord({super.key});
 
@@ -345,7 +347,7 @@ class dashbord extends StatelessWidget {
                           children: [
                             Container(
                               child: Row(
-                                children: [
+                                children: <Widget>[
                                   Icon(
                                     Iconsax.heart,
                                     color: Colors.red,
@@ -357,7 +359,7 @@ class dashbord extends StatelessWidget {
                                   Padding(
                                     padding:
                                         const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                    child: Text('20K'),
+                                    child: Text(' $count K'),
                                   )
                                 ],
                               ),
@@ -426,6 +428,30 @@ class dashbord extends StatelessWidget {
             }, childCount: 9),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class countheart extends StatefulWidget {
+  const countheart({super.key});
+
+  @override
+  State<countheart> createState() => _countheartState();
+}
+
+class _countheartState extends State<countheart> {
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        setState(() {
+          count += 10;
+        });
+      },
+      icon: Icon(
+        Iconsax.heart,
+        color: Colors.red,
       ),
     );
   }
